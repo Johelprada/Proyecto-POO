@@ -14,4 +14,34 @@ Algunas de las ventajes del numero de registro son las siguientes:
 3. Permitir que el usuario determine la prioridad de cada paquete, ya sea: urgente, normal, baja prioridad.
 4. generar una base de datos organizada con base en el numerode registro asociado al paquete, facilitando asi la busqueda de informacion y datos tales como: fecha de entrada, fecha de salida, caracteristicas del paquete, si esta el paquete en la bodega etc. (esto se piensa como tipo tabla de datos en exel que se pueda descargar)
 
+```mermaid
+classDiagram
+direction LR
+    class Registro {
+	    #ID:dict
+	    #Fecha:list
+	    #NotasDelOperador: string
+	    #CambiosRegistrados: bool
+	    #imprimir_reporte()
+    }
 
+    class Contenido {
+	    +Contenido: string
+	    +Fragil: bool
+    }
+
+    class Paquete {
+	    -cantidad: int
+	    -peso: float
+		-precio: float
+		-urgencia: string
+	    -esta_en_almacen()
+	    -guardar_paquete()
+	    -guardar_muchos_paquetes()
+	    -es_fragil()
+    }
+
+    Contenido *-- Paquete
+    Paquete *-- Registro
+
+```
