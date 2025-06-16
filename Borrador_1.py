@@ -1,9 +1,9 @@
 # Proyecto-POO
-(solo se traslado el codigo)
-(porfavor mirar si si es este o no)
+#(solo se traslado el codigo)
+#(porfavor mirar si si es este o no)
 ## Borrador
 
-```python
+
 almacen_principal=[] #Soy donde se almacenan los paquetes!
 almacen_2=[] #Soy donde se almacenan los paquetes!
 almacen_3=[] #Soy donde se almacenan los paquetes!
@@ -48,4 +48,4 @@ class Paquete:
     
     def __str__(self):
         return f"Paquete de {self.cantidad} x {self.contenido.contenido} ({'frágil' if self.contenido.es_fragil else 'no frágil'})"
-```
+
