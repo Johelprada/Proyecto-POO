@@ -1,0 +1,31 @@
+``` mermaid
+classDiagram
+direction TB
+    class Registro {
+	    #ID:dict
+		#Fecha:list
+		#NotasDelOperador: string
+		#CambiosRegistrados: bool
+		#imprimir_reporte()
+
+    }
+
+    class Contenido {
+	    +Contenido: string
+	    +Fragil: bool
+	    
+    }
+
+    class Paquete {
+	    
+	    -cantidad: int
+	    -peso: float
+	    -esta_en_almacen()
+	    -guardar_paquete()
+	    -guardar_muchos_paquetes()
+	    -es_fragil()
+    }
+
+    Contenido <|-- Paquete
+    Paquete *-- Registro
+``` 
