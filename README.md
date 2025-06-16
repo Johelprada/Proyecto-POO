@@ -12,5 +12,6 @@ Algunas de las ventajes del numero de registro son las siguientes:
 1. clasificar los paquetes en diferentes modulos mediante los cuales sea mas sencillo gestionarlos. 
 2. Asignarle caracteristicas especificas a los paquetes, por ejemplo: fragiles, pesados, vivos, , etc.
 3. Permitir que el usuario determine la prioridad de cada paquete, ya sea: urgente, normal, baja prioridad.
-permitiria generar una documentacion organzada donde cada paquete tiene un numero de registro unico asociado a el, facilitando asi la busqueda de informacion y datos tales como: fecha de entrada, fecha de salida, caracteristicas del paquete, si esta el paquete en la bodega etc.
+4. generar una base de datos organizada con base en el numerode registro asociado al paquete, facilitando asi la busqueda de informacion y datos tales como: fecha de entrada, fecha de salida, caracteristicas del paquete, si esta el paquete en la bodega etc. (esto se piensa como tipo tabla de datos en exel que se pueda descargar)
+
 
