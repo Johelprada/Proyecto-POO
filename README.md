@@ -9,18 +9,21 @@ registros=[]
 
 class Contenido:
     definition="Soy un elemento que clasificara con caracteristicas especificas"
-    def __init__(self, contenido:str, es_fragil:bool):
-        self.contenido=contenido
+    def __init__(self, contenido:str, precio_unidad:float, es_fragil:bool=False):
+        self._contenido=contenido
+        self._precio=precio_unidad
         self.es_fragil=es_fragil
     def __str__(self):
-        return f"Soy un {self.contenido}"
+        return f"Soy un {self.contenido} con valor de {self.precio} por unidad"
         
 
 class Paquete:
+    lista_de_cambios=[]
     def __init__(self, cantidad:int, peso:float, contenido:"Contenido"):
         self.contenido=contenido
         self.cantidad=cantidad
         self.peso=peso
+        self._precio=contenido._precio*self.cantidad
 
     def esta_en_almacen(self, almacen:list)->bool:
         if self in almacen:
