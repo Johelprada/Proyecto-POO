@@ -52,6 +52,9 @@ class Paquete:
 # Clase Registro
 ```python
 from datetime import datetime #Unicamente me interesa el datetime(class) no el modulo completo
+
+LISTA_CAMBIOS = [] #Lista donde se guardaran los cambios generados por funciones def y metodos de clase
+
 #Tipos de informe A:Generico , U:Importante P:De prueba
 class Registro:
     N_registro=0
@@ -82,10 +85,17 @@ class Registro:
     def agregar_cambio(self, cambio: str):
         self.cambios.append(cambio)
 
+def crear_registro(notas_op:str, tip)->"Registro": #Funcion escencial para generar registros
+    New_R=Registro(notas_op, LISTA_CAMBIOS, tip)
+    return New_R
+
 registro1=Registro("Hola wenas",[])
 registro1.mostrar_registro()
 print(f"{registro1.id} - {registro1.N_registro}\n")
 registro2=Registro("Que mas!",["NO CAMBIA NADA"],"A")
 registro2.mostrar_registro()
 print(f"{registro2.id} - {registro2.N_registro}\n")
+
+new_reg= crear_registro(input("Agrega tus notas aqui:"),"A")
+new_reg.mostrar_registro()
 ```
