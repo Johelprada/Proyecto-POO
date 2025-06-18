@@ -1,5 +1,5 @@
 # Proyecto-POO
-## Borrador
+## Estructura general
 
 ```python
 almacen_principal=[] #Soy donde se almacenan los paquetes!
