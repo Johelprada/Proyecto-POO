@@ -29,7 +29,7 @@ class ManejadorCSV:
             escritor.writerows(datos)
         
         print(f"Archivo {self.archivo} creado")
-#con esto leemos los datos de la lista de arriba
+
     def leer_csv_basico(self):
         print("--- Lectura basica con CSV ---")
         try:
@@ -39,7 +39,36 @@ class ManejadorCSV:
                     print(fila)
         except FileNotFoundError:
             print("Error: archivo no encontrado")
-
+#definimos los filtros que se van a poner, aqui tome el atributo precio, pero en el proyecto final tmb podriamos usar cosas como urgente, vivo, etc.
+    def probar_filtros(self):
+        print("\n--- Productos caros (>$50) ---") #revisamos solo productos que valen mas de 50
+        try:
+            with open(self.archivo, 'r') as f:
+                lector = csv.DictReader(f)
+                for fila in lector:
+                    if float(fila['Precio']) > 50:
+                        print(f"{fila['Nombre']} - ${fila['Precio']}")
+        except Exception as e:
+            print(f"Error: {e}")
+        
+        print("\n--- Por categoria ---") # organizamos los productos por categoria
+        try:
+            with open(self.archivo, 'r') as f:
+                lector = csv.DictReader(f)
+                categorias = {}
+                for fila in lector:
+                    categoria = fila['Categoria']
+                    precio = float(fila['Precio'])
+                    
+                    if categoria not in categorias:
+                        categorias[categoria] = []
+                    categorias[categoria].append(precio)
+                
+                for categoria, precios in categorias.items():
+                    promedio = sum(precios) / len(precios)
+                    print(f"{categoria}: ${promedio:.2f}")
+        except Exception as e:
+            print(f"Error: {e}")
 
 def main():
     print(" PRUEBA DE CSV ")
@@ -51,7 +80,9 @@ def main():
     
     # Leemos de forma basica
     manejador.leer_csv_basico()
-
+    
+    # Probar algunos filtros
+    manejador.probar_filtros()
 
 if __name__ == "__main__":
     main()
