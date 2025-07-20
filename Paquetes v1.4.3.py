@@ -42,7 +42,7 @@ class Paquete:
         self.clasificado=contenido.categoria
         serial=Paquete.IDs_gen[self.clasificado]
         self.id= f"#{serial:04}{self.clasificado}"
-        Paquete.IDs_gen[self.clasificado]= 0 if serial > 9999 else serial+
+        Paquete.IDs_gen[self.clasificado]= 0 if serial > 9999 else serial
         #-------------------------------
         self.contenido=contenido._nombre
         self.cantidad=cantidad
