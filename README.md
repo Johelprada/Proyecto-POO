@@ -32,7 +32,7 @@ Proyecto/main.py
 ```
 bien puede hacer lo anterior o abrir el codigo y ejecutarlo desde main.py
 3. Se ejecutará una ventana en la consola en la cual se le solicitara que elija alguna de las opciones. 
-<img width="1002" height="532" alt="image" src="Screenshot 2025-07-23 141635.png" />
+<img width="800" height="532" alt="image" src="Screenshot 2025-07-23 141635.png" />
 
 
 3. Se inicia la optimización:
