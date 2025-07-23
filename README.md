@@ -1,4 +1,7 @@
 # Nuka-Store Manager 2077
+
+<img width="1023" height="126" alt="nkastore2" src="https://github.com/user-attachments/assets/6609c289-2a72-460e-ba7d-5f1bcac2a175" />
+
 "Con nuka-inventory ni una tuerca se pierde
 
 Nuka-Store Manager 2077 es una herramienta moderna y gratuita para gestionar inventario y productos en almacenes de cualquier tamaño
