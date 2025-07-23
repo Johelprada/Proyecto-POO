@@ -1,5 +1,17 @@
-# Proyecto-POO
-## 
+# Nuka-Store Manager 2077
+"Con nuka-inventory ni una tuerca se pierde
+
+Nuka-Store Manager 2077 es una herramienta moderna y gratuita para gestionar inventario y productos en almacenes de cualquier tamaño
+¡organiza tu mundo como si fuera el fin del mundo!"
+
+Incluye pero no se limita a:
+- Control de inventario en tiempo real
+- Búsqueda rápida de productos
+- Generación de reportes/registros en pkl y CSV
+
+"Tecnología del mañana, ¡hoy mismo en su almacén! Con Nuka-Store Manager 2077, el futuro de la logística... está asegurado."
+
+## Equipo Nuka-POOla
 Nuestro grupo eligio la alternativa 1.
 
 En esta se plantea un sistema de gestion de inventario para una bodega, nuestro grupo la tomo y espera centrarla en un sistema que pueda funcionar como sistema de envios, algo similar a los sistemas de los cuales disponen empresas tales como amazon, temu, entre otros.
