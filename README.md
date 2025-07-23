@@ -1,5 +1,5 @@
 # Nuka-Store Manager 2077
-"Con nuka-inventory ni una tuerca se pierde
+"Con nuka-inventory ni una tuerca se pierde"
 
 Nuka-Store Manager 2077 es una herramienta moderna y gratuita para gestionar inventario y productos en almacenes de cualquier tamaño
 ¡organiza tu mundo como si fuera el fin del mundo!"
