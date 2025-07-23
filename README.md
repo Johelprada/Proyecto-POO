@@ -37,7 +37,7 @@ bien puede hacer lo anterior o abrir el codigo y ejecutarlo desde main.py
 <img width="700" height="532" alt="image" src="Screenshot 2025-07-23 141635.png" />
 
 
-4. Como puede ver las diversas opciones le permitiran gestioanr el inventario. Aqui una explicacion de que hace cada una:
+4. Como puede ver las diversas opciones le permitiran gestionar el inventario. Aqui una explicacion de que hace cada una:
  -*Crear nuevo producto*: con esto podra crear un producto base del cual se generaran los paquetes, de aqui podras partir para armar tus paquetes
    
    -*Crear paquetes*: Toma los productos base que has generado y te permite dar una cantidad de cuantos tienes de estos.
