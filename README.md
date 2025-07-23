@@ -11,6 +11,36 @@ Incluye pero no se limita a:
 
 "Tecnología del mañana, ¡hoy mismo en su almacén! Con Nuka-Store Manager 2077, el futuro de la logística... está asegurado."
 
+
+## 📊 Implementación
+
+## 🧩 Requisitos previos
+
+- Versión mínima requerida: Python 3.7.
+- Versión recomendada: Python 3.9.
+
+Además, para el correcto funcionamiento del codigo será necesario instalar con
+```cmd
+pip install openpyxl
+```
+
+## 🎮 Funcionamiento 
+1. Descargará la carpeta llamada empaquetado, una vez hecho esto podra abrirla desde su visualizador de codigo de confianza.
+2. El programa se ejecuta desde 
+```cmd
+Proyecto/main.py
+```
+bien puede hacer lo anterior o abrir el codigo y ejecutarlo desde main.py
+3. Se ejecutará una ventana en la consola en la cual se le solicitara que elija alguna de las opciones. 
+<img width="1002" height="532" alt="image" src="Screenshot 2025-07-23 141635.png" />
+
+
+3. Se inicia la optimización:
+
+
+
+---
+
 ## Equipo Nuka-POOla
 Nuestro grupo eligio la alternativa 1.
 
