@@ -77,6 +77,10 @@ Este codigo no está finalizado por ende tiene diversos inconvenientes:
 ---
 
 ## Equipo Nuka-POOla
+
+<img width="460" height="114" alt="Nuka Poola botella" src="https://github.com/user-attachments/assets/5508df52-6244-437b-8afc-d0ff8b11aaa9" />
+
+
 Nuestro grupo eligio la alternativa 1.
 
 En esta se plantea un sistema de gestion de inventario para una bodega, nuestro grupo la tomo y espera centrarla en un sistema que pueda funcionar como sistema de envios, algo similar a los sistemas de los cuales disponen empresas tales como amazon, temu, entre otros.
