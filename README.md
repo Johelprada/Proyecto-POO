@@ -1,5 +1,5 @@
 # Nuka-Store Manager 2077
-"Con nuka-inventory ni una tuerca se pierde"
+"Con nuka-inventory ni una tuerca se pierde
 
 Nuka-Store Manager 2077 es una herramienta moderna y gratuita para gestionar inventario y productos en almacenes de cualquier tamaño
 ¡organiza tu mundo como si fuera el fin del mundo!"
@@ -7,7 +7,7 @@ Nuka-Store Manager 2077 es una herramienta moderna y gratuita para gestionar inv
 Incluye pero no se limita a:
 - Control de inventario en tiempo real
 - Búsqueda rápida de productos
-- Generación de reportes/registros en pkl y CSV
+- Generación de reportes/registros en pkl y tablas excel
 
 "Tecnología del mañana, ¡hoy mismo en su almacén! Con Nuka-Store Manager 2077, el futuro de la logística... está asegurado."
 
@@ -52,12 +52,19 @@ bien puede hacer lo anterior o abrir el codigo y ejecutarlo desde main.py
 
    -*Registros*:
 
+   -*Editar producto*:Aqui podras cambiarle el precio a el stock que tienes al producto
+
+   -*Borrar producto*: Aqui podras eliminar los productos que ya no desees.
+
+   -*Borrar paquete*: Aqui podras borrar los paquetes que ya no desees.
+
 ## Observaciones
 
 Este codigo no está finalizado por ende tiene diversos inconvenientes:
 
 - Aun no tiene la posibilidad de tener una persistencia de datos.
 - Al generar un nuevo informe de los paquetes será necesario que se elimine el anterior y se remplace por el nuevo, esto puesto que aun no se genera de forma dinamica.
+- Aun no se le ah añadido la funcion de edicion para los paquetes.
 
   
 
