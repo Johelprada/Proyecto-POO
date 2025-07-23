@@ -28,37 +28,76 @@ Algunas de las ventajes del numero de registro son las siguientes:
 
 ```mermaid
 classDiagram
-direction LR
-    class Registro {
-	    #Id:dict
-	    #Fecha:list
-            #Tipo:string
-	    #NotasDelOperador: string
-	    #Cambios: list
-	    #mostrar_reporte()
-            #agregar_nota()
-            #agregar_cambio()
+    class Producto {
+        -_nombre: str
+        -_precio: float
+        -_contenido: str
+        +precio: float
+        +peso: float
+        +categoria: str
+        +stock: int
+        +__init__(nombre, precio, peso, categoria, stock)
+        +get_precio(): float
+        +get_objeto(): str
+        +es_fragil(): bool
+        +reavastecer(tantos: int)
     }
-
-    class Contenido {
-	    +Contenido: string
-	    +Fragil: bool
-            +precio: float
-    }
-
     class Paquete {
-            -contenido: string
-	    -cantidad: int
-	    -peso: float
-		-precio: float
-		-urgencia: string
-	    -esta_en_almacen()
-	    -guardar_paquete()
-	    -guardar_muchos_paquetes()
-	    -es_fragil()
+        +id: str
+        +clasificado: str
+        +cantidad: int
+        +contenido: Producto
+        +peso: float
+        -_precio: float
+        +__init__(cantidad, contenido)
+        +esta_en_almacen(almacen): bool
+        +ver_contenido(): str
+        +guardar_paquete(almacen: str)
+        +es_fragil(): bool
     }
-
-    Contenido *-- Paquete
-    Paquete *-- Registro
+    class Registro {
+        +fecha: datetime
+        +tipo: str
+        +id: str
+        -_notas_operador: str
+        +cambios: list
+        +__init__(notas, cambios, tipo)
+        +mostrar_registro()
+        +agregar_nota(nueva_nota)
+        +agregar_cambio(cambio)
+    }
+    class ManejadorCSV {
+        +archivo: str
+        +__init__()
+        +generar_csv_de_almacen(nombre_almacen)
+        +leer_csv_basico()
+        +generar_excel(nombre_almacen)
+        -_formatear_encabezados(ws)
+        -_ajustar_columnas_excel(ws)
+    }
+    class Main {
+        +main()
+        +mostrar_menu()
+        +menu_crear_producto()
+        +menu_crear_paquete()
+        +ver_catalogo()
+        +ver_almacen()
+        +menu_exportar()
+        +ver_historial_cambios()
+        +ver_registros_completos()
+        +editar_producto()
+        +borrar_producto()
+        +borrar_paquete()
+    }
+    Paquete --> Producto : contiene
+    ManejadorCSV ..> Paquete : usa
+    ManejadorCSV ..> Producto : usa
+    Main ..> Producto : crea y gestiona
+    Main ..> Paquete : crea y gestiona
+    Main ..> Registro : crea registros
+    Main ..> ManejadorCSV : usa para exportar
+    note for Producto "Almacenado en\ncatalogo_productos{}"
+    note for Paquete "Almacenado en\nALMACENES{}"
+    note for Registro "Almacenado en\nregistros_a{}"
 
 ```
