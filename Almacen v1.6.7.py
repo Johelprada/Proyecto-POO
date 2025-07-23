@@ -272,19 +272,6 @@ def exportar_almacen_csv(nombre_almacen="Almacen_principal"):
 
 # Menú básico para el sistema de almacén
 
-def mostrar_menu():
-    print("\n" + "="*40)
-    print("    SISTEMA DE ALMACÉN v1.6.2")
-    print("="*40)
-    print("1. Crear nuevo producto")
-    print("2. Crear paquete")
-    print("3. Ver productos del catálogo")
-    print("4. Ver contenido de almacén")
-    print("5. Exportar almacén a Excel")
-    print("6. Ver historial de cambios")
-    print("7. Ver registros con fechas")
-    print("8. Salir")
-    print("="*40)
 
 def menu_crear_producto():
     print("\n--- CREAR NUEVO PRODUCTO ---")
