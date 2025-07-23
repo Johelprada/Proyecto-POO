@@ -12,9 +12,9 @@ Incluye pero no se limita a:
 "Tecnología del mañana, ¡hoy mismo en su almacén! Con Nuka-Store Manager 2077, el futuro de la logística... está asegurado."
 
 
-## 📊 Implementación
+##  Implementación
 
-## 🧩 Requisitos previos
+##  Requisitos previos
 
 - Versión mínima requerida: Python 3.7.
 - Versión recomendada: Python 3.9.
@@ -24,21 +24,21 @@ Además, para el correcto funcionamiento del codigo será necesario instalar con
 pip install openpyxl
 ```
 
-## 🎮 Funcionamiento 
+##  Funcionamiento 
 1. Descargará la carpeta llamada empaquetado, una vez hecho esto podra abrirla desde su visualizador de codigo de confianza.
 2. El programa se ejecuta desde 
 ```cmd
 Proyecto/main.py
 ```
 bien puede hacer lo anterior o abrir el codigo y ejecutarlo desde main.py
+
 3. Se ejecutará una ventana en la consola en la cual se le solicitara que elija alguna de las opciones. 
 
 <img width="700" height="532" alt="image" src="Screenshot 2025-07-23 141635.png" />
 
 
 4. Como puede ver las diversas opciones le permitiran gestioanr el inventario. Aqui una explicacion de que hace cada una:
-   
-   -*Crear nuevo producto*: con esto podra crear un producto base del cual se generaran los paquetes, de aqui podras partir para armar tus paquetes
+ -*Crear nuevo producto*: con esto podra crear un producto base del cual se generaran los paquetes, de aqui podras partir para armar tus paquetes
    
    -*Crear paquetes*: Toma los productos base que has generado y te permite dar una cantidad de cuantos tienes de estos.
 
@@ -51,6 +51,18 @@ bien puede hacer lo anterior o abrir el codigo y ejecutarlo desde main.py
    -*Historial de cambios*: Aqui podras ver todos los productos y paquetes que se han creado, tambien los archivos excel que se han generado.
 
    -*Registros*:
+
+## Observaciones
+
+Este codigo no está finalizado por ende tiene diversos inconvenientes:
+
+- Aun no tiene la posibilidad de tener una persistencia de datos.
+- Al generar un nuevo informe de los paquetes será necesario que se elimine el anterior y se remplace por el nuevo, esto puesto que aun no se genera de forma dinamica.
+
+  
+
+   
+
 
 
 
